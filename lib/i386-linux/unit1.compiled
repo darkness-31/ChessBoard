@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1611610588"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -l -vewnhibq -Fi/media/root/KINGSTON/ChessBoard/lib/i386-linux -Fu/media/root/KINGSTON/ChessBoard/ -FU/media/root/KINGSTON/ChessBoard/lib/i386-linux/ -FE/media/root/KINGSTON/ChessBoard/ -o/media/root/KINGSTON/ChessBoard/project1 unit1.pas"/>
+  <Complete Value="False"/>
+</CONFIG>
