@@ -109,7 +109,7 @@ end;
 procedure TForm1.BoardButtonClick(sender: TObject);
 const
   cnt: integer = 1;
-  figure: Array[1..4] of string = ('К', 'Л', 'Ф', '');
+  figure: Array[1..4] of string = ('К', 'Л', 'С', '');
 var
   but: TButton;
 begin

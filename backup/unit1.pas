@@ -28,7 +28,6 @@ type
 
 var
   Form1: TForm1;
-  PaintArr : Array [1..32] of string;
 const
   TopChess : Array [1..8] of string = ('A','B','C','D','E','F','G','H');
   Ladia : string = '';
@@ -88,8 +87,6 @@ var
   i:integer;
   Temp:string;
 begin
-      for i:=1 to length(PaintArr)do FreeAndNil(FindComponent(PaintArr[i]) as TShape);
-
       if (King = '') then Temp += 'Нет Короля ';
       if (Ferzin = '') and (Ladia = '') then Temp += 'Нет чёрных фигур ';
 
@@ -142,7 +139,6 @@ var
   cells: array[1..16] of string;
   answer:boolean = False;
   tempBut: TButton;
-  PaintMove: TShape;
 begin
   column := figure.Name[1];
   row := StrToInt(figure.Name[2]);
@@ -181,16 +177,6 @@ begin
     if cells[i] = '' then continue;
     tempBut := FindComponent(cells[i]) as TButton;
     if tempBut.Name = King then answer := True;
-    PaintMove := TShape.Create(self);
-    PaintMove.Pen.Color := clRed;
-    PaintMove.Height := 8;
-    PaintMove.Width := 8;
-    PaintMove.Parent := self;
-    PaintMove.Top := tempBut.Top;
-    PaintMove.Left := tempBut.Left;
-    temp := 'prikol' + IntToStr(length(PaintArr)) + IntToStr(i);
-    PaintMove.Name := temp;
-    PaintArr[length(PaintArr)]:=temp;
   end;
 
   exit(answer);
@@ -202,7 +188,6 @@ var
   cells: array[1..16] of string;
   answer: boolean = False;
   tempBut: TButton;
-  PaintMove: TShape;
 begin
   column := figure.Name[1];
   row := StrToInt(figure.Name[2]);
@@ -252,16 +237,6 @@ begin
     if cells[i] = '' then continue;
     tempBut := FindComponent(cells[i]) as TButton;
     if tempBut.Name = King then answer := True;
-    PaintMove := TShape.Create(self);
-    PaintMove.Pen.Color := clBlue;
-    PaintMove.Height := 8;
-    PaintMove.Width := 8;
-    PaintMove.Parent := self;
-    PaintMove.Top := tempBut.Top;
-    PaintMove.Left := tempBut.Left + Round(tempBut.Height / 2);
-    temp := 'prikol' + IntToStr(length(PaintArr)) + IntToStr(i);
-    PaintMove.Name := temp;
-    PaintArr[length(PaintArr)]:=temp;
   end;
 
   Exit(answer);

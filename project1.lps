@@ -2,28 +2,34 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="11"/>
-    <Units Count="1">
-      <Unit0>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
         <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="29" Y="12"/>
-        <UsageCount Value="10"/>
+        <TopLine Value="35"/>
+        <CursorPos X="48" Y="112"/>
+        <FoldState Value=" T3f0e112 pk1lV08p"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
-      </Unit0>
+      </Unit>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="-1"/>
-    </General>
     <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode=""/>
+      <Modes ActiveMode=""/>
     </RunParams>
   </ProjectSession>
 </CONFIG>
